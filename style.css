@@ -1,0 +1,26 @@
+/* tag selector- lowest priority */
+h3{
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100;
+
+}
+
+
+
+
+/*  class selector- medium priority */
+.program{
+    margin: 5%;
+    font-style:italic;
+    font-size: 150;
+    color:blueviolet;
+
+}
+
+/* id selector- top priority */
+#special{
+    font-size: 90;
+    font-style:oblique;
+    color:rgb(11, 24, 109)
+}
