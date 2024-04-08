@@ -15,8 +15,14 @@ h3{
     font-style:italic;
     font-size: 150;
     color:blueviolet;
+    text-align: center;
 
 }
+
+
+
+
+
 
 /* id selector- top priority */
 #special{
