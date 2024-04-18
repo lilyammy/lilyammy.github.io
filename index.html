@@ -4,6 +4,8 @@
 
     <head>
 
+
+
         <title> Lily Gottlieb's Website </title>
 
         <style> 
@@ -11,22 +13,124 @@
                color:cadetblue 
             }
             
+                    
+
+                                    .navbar {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: Arial;
+                        }
+
+                        .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        }
+
+                        .dropdown {
+                        float: left;
+                        overflow: hidden;
+                        }
+
+                        .dropdown .dropbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        }
+
+
+                        .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        }
+
+                        .dropdown-content a {
+                        float: none;
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                        }
+
+                        .dropdown-content a:hover {
+                        background-color: #ddd;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                        display: block;
+                        }
+
+
+                        .container img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        -webkit-mask-image: url(#mask);
+                        mask-image: url(#mask);
+                        margin: 30%;
+                       
+                        }
+
+
+
+
         </style>
-        <link rel = "stylesheets" href = "style.css"
+
+            
+
+
+
+
+
+
+        <link rel = "stylesheets" href = "style.css">
 
 
     </head>
 
     <body style = "background-color:darkcyan; padding:5%; ">
 
+        <div class="navbar"> 
+            <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="programs.html">Programs</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+            </div>
+        </div>
+
 
         <h2 style=" text-decoration: dotted; text-align: center; font-size:xx-large;"> Lily Gottlieb </h2>
-       <ul>
-        <li> <a href = "resume.html" > Resume </a> </li>
-        <li> <a href = "programs.html" >Programs </a> </li>
-        <li> <a href = "hobbies.html" >Hobbies </a> </li> 
-
-       </ul> 
+    
+        <svg width="0" height="0" viewBox="0 0 400 300">
+            <defs>
+              <mask id="mask">
+                <rect fill="#000000" x="0" y="0" width="400" height="400"></rect>
+                <circle fill="#FFFFFF" cx="150" cy="150" r="100" />
+                <circle fill="#FFFFFF" cx="50" cy= "50" r="150" />
+              </mask>
+            </defs>
+          </svg>
+          
+          <div class="container">
+              <img src="download.jpg" alt="Smiling">
+          </div>
 
 
     </body>

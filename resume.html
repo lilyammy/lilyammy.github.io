@@ -8,26 +8,100 @@
 
         <link rel="stylesheet" href="style.css">
 
-        <table border = "1" >
-            <tr> 
-                <th> Name</th>
-                <th>Phone Number </th>
-                <th>Address </th>
-                <th>Email </th>
-            </tr>
-            <tr>
-                <th> Lily Gottlieb </th>
-                <th> 512-212-0338</th>
-                <th> 9999 W 12 st </th>
-                <th> FakeEmail@gmail.com</th>
-            </tr>
-            </table>
+            <style>
+                 .navbar {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: Arial;
+                        }
+
+                        .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: white;
+                        text-align: right;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        }
+
+                        .dropdown {
+                        float: left;
+                        overflow: hidden;
+                        }
+
+                        .dropdown .dropbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        }
+
+
+                        .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        }
+
+                        .dropdown-content a {
+                        float: none;
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                        }
+
+                        .dropdown-content a:hover {
+                        background-color: #ddd;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                        display: block;
+                        }
+     </style>
+
+            <table border = "1" >
+                <tr> 
+                    <th> Name</th>
+                    <th>Phone Number </th>
+                    <th>Address </th>
+                    <th>Email </th>
+                </tr>
+                <tr>
+                    <th> Lily Gottlieb </th>
+                    <th> 512-212-0338</th>
+                    <th> 9999 W 12 st </th>
+                    <th> FakeEmail@gmail.com</th>
+                </tr>
+                </table>
+
+
+
+
 
     </head>
 
     <body>
         <body style="background-color:lightsteelblue">
-    
+        <div class="navbar"> 
+            <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="programs.html">Programs</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+            </div>
+        </div>
         
         <h1> Lily Gottlieb's Resume </h1>
 

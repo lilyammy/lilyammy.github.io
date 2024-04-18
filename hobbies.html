@@ -6,10 +6,104 @@
 
         <title> Lily's Hobbies </title>
         <link rel="stylesheet" href="style.css">
+
+
+        <style>
+         
+
+            div.scroll-container {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            }
+
+            div.scroll-container img {
+            padding: 10px;
+            }
+
+            .navbar {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: Arial;
+                        }
+
+                        .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: white;
+                        text-align: right;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        }
+
+                        .dropdown {
+                        float: left;
+                        overflow: hidden;
+                        }
+
+                        .dropdown .dropbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        }
+
+
+                        .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        }
+
+                        .dropdown-content a {
+                        float: none;
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                        }
+
+                        .dropdown-content a:hover {
+                        background-color: #ddd;
+                        }
+
+                        .dropdown:hover .dropdown-content {
+                        display: block;
+                        }
+
+
+
+
+
+        </style>
     </head>
 
     <body>
         <body style="background-color:lightcyan">
+
+            <div class="navbar"> 
+                <div class="dropdown">
+                <button class="dropbtn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="hobbies.html">Hobbies</a>
+                </div>
+                </div>
+            </div>
+
+
+
         <h1 style="text-align: center; font-size: 100; word-wrap: break-word;"><b> My Hobbies</b> </h1>
 
         <h3> <i>Ultimate Frisbee</i></h3>
@@ -28,6 +122,18 @@
         <h3> <i>Model UN</i> </h3>
             <p>I learned what Model UN was last year when all the freshman had to do a miniature conference. Model UN is a simulation of the UN General Assembly where all the kids represent a figure/country and debate numerous different topics. Austin High has its own conference with other highschools known as "AUSMUN" </p>
             <a href="https://sites.google.com/stu.austinisd.org/ausmun2023/home" > Ausmun Austin High </a>
+
+
+
+            <div class="scroll-container">
+                <img src="frisbee1.jpg" alt="F1">
+                <img src="photo2.jpg" alt="F2">
+                <img src="photo2.png" alt="F3 ">
+                <img src="tusc.jpg" alt="F4 ">
+                <img src="sol.jpg" alt="F5 ">
+                <img src="audl.jpg" alt="F5 ">
+              </div>
+
 
 
     </body>
